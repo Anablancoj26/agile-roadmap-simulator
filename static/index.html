@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Roadmap & Kanban Simulator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>🚀 Agile Roadmap & Kanban Simulator</h1>
+        <p>Project Management & Systems Engineering Portfolio Project</p>
+    </header>
+
+    <main class="container">
+        <section class="metrics">
+            <div class="card">
+                <h3>Total Tareas</h3>
+                <span id="total-tasks">0</span>
+            </div>
+            <div class="card">
+                <h3>Completadas</h3>
+                <span id="completed-tasks">0</span>
+            </div>
+            <div class="card">
+                <h3>Avance del Sprint</h3>
+                <span id="progress-percentage">0%</span>
+            </div>
+        </section>
+
+        <section class="kanban-board">
+            <div class="column" id="todo">
+                <h2>📋 Por Hacer (To Do)</h2>
+                <div class="task-list" id="list-todo"></div>
+            </div>
+            <div class="column" id="in_progress">
+                <h2>⚙️ En Proceso (In Progress)</h2>
+                <div class="task-list" id="list-in_progress"></div>
+            </div>
+            <div class="column" id="done">
+                <h2>✅ Completado (Done)</h2>
+                <div class="task-list" id="list-done"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
